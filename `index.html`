@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Web Personnelle</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .bio {
+            margin: 20px 0;
+            text-align: center;
+        }
+        .videos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .video {
+            width: 45%;
+            margin: 10px 0;
+        }
+        .video iframe {
+            width: 100%;
+        }
+        .contact {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .social-links a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bienvenue sur ma Page Personnelle</h1>
+    </header>
+    <div class="container">
+        <section class="bio">
+            <h2>À propos de moi</h2>
+            <p>Je suis un passionné de création de contenu sur TikTok. J'aime partager des vidéos amusantes et engageantes avec mes followers. Suivez-moi pour découvrir plus de contenu incroyable !</p>
+        </section>
+        <section class="videos">
+            <h2>Mes Vidéos TikTok</h2>
+            <div class="video">
+                <iframe src="https://www.tiktok.com/embed/v2/7241984201240050990" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video">
+                <iframe src="https://www.tiktok.com/embed/v2/7241984201240050990" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <!-- Ajoutez plus de vidéos ici en suivant le même format -->
+        </section>
+        <section class="contact">
+            <h2>Contactez-moi</h2>
+            <form action="mailto:tonemail@example.com" method="post" enctype="text/plain">
+                <label for="name">Nom:</label><br>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+                <input type="submit" value="Envoyer">
+            </form>
+        </section>
+        <section class="social-links">
+            <h2>Suivez-moi sur les réseaux sociaux</h2>
+            <a href="https://www.tiktok.com/@mik.ael_officiel" target="_blank">TikTok</a>
+            <a href="https://www.instagram.com/tonprofil" target="_blank">Instagram</a>
+            <a href="https://www.twitter.com/tonprofil" target="_blank">Twitter</a>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Ma Page Personnelle. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
